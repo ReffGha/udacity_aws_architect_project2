@@ -1,0 +1,17 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,482.85,5794.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),Elastic Load Balancing,0,967.25,11607.00,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),S3 Standard,0,230.06,2760.72,USD,S3 Standard storage (10000 GB per month)
+"My Estimate,US East (N. Virginia),Data Transfer,0,45.99,551.88,USD,""Data Transfer, Data transfer cost (45.99)"""
+"My Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,3906.756,46881.07,USD,""Quantity (1), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (300 GB), Instance type (db.m5.12xlarge)"""
+"My Estimate,US East (Ohio),Amazon EC2,0,1514.72,18176.64,USD,""Operating system (Linux), Quantity (10), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (300 GB), Instance type (t3.xlarge)"""
+"My Estimate,US East (N. Virginia),Amazon EC2,0,1514.72,18176.64,USD,""Operating system (Linux), Quantity (10), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (300 GB), Instance type (t3.xlarge)"""
+My Estimate,US East (Ohio),Elastic Load Balancing,0,967.25,11607.00,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,482.85,5794.20,USD,Number of NAT Gateways (1)
+"My Estimate,US East (N. Virginia),Amazon Aurora MySQL-Compatible,0,10061.7,120740.40,USD,""Change records per statement (0.38), (3 instances)  db.r5.12xlarge  Memory optimized  Reserved Instances  1yr  No Upfront, Storage amount (1000 GB), Number of I/Os per month in millions (100), Additional backup storage (1000 GB)"""
+
+
+
+AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.
+
+For a higher budget I choose to use a different DB: Aurora with MySQL compatibility and 3 nodes, 2 active and 1 passive. This allows the whole setup to be Multi-Region and Multi-AZ in each region. Therefore the estimation considers additional Load balancers and EC2 instances to reflect the multi-region setup.
